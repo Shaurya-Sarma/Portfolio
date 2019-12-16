@@ -1,0 +1,16 @@
+@import "common/animation"; // pre-defined animate classes and keyframes
+@import "common/mixins"; // pre-defined mixin declarations
+@import "common/functions"; // pre-defined function declartions
+@import "common/variables"; // pre-defined variable declarations
+@import "common/base"; // Overide browser defaults | IE: psuedo-classes
+@import "common/helpers"; // Global Classes
+
+@import "components/heading"; //components directory | files for each section
+@import "components/header";
+@import "components/about";
+@import "components/skills";
+@import "components/projects";
+@import "components/contact";
+@import "components/footer";
+
+@import "pages/home"; // pages directory | files for each page { page-specific styling }

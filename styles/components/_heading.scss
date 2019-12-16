@@ -1,0 +1,139 @@
+// * Heading Styles
+.heading {
+  &-sub-lev {
+    color: colors(col-white);
+    font-style: italic;
+  }
+  &-section-lev {
+    text-transform: uppercase;
+    padding: 0.5rem;
+    margin: auto;
+    border-bottom: 4px solid colors(col-black);
+    width: fit-content;
+  }
+  &-icon-lev {
+    text-transform: capitalize;
+    padding: 2rem 0;
+    @include responsive(md) {
+      font-size: 2.8rem;
+    }
+  }
+  &-biography-lev {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3.6rem;
+    padding: 2rem 0;
+  }
+  &-projects-lev {
+    margin-top: 4.5rem;
+    @include responsive(lg) {
+      font-size: 20px;
+    }
+  }
+
+  &-projects-sub-lev {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    @include responsive(lg) {
+      font-size: 14px;
+    }
+  }
+  &-contact-sub-lev {
+    color: colors(col-white);
+    font-weight: 550;
+    display: block;
+    padding: 0;
+  }
+}
+
+// * LOGO SVG STYLING
+.name-logo {
+  margin-bottom: 1rem;
+  animation: fill 1s ease forwards;
+  animation-delay: 4s;
+  width: 80%;
+  height: 40%;
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: colors(col-dark-blue);
+  }
+}
+
+// * S CHARACTER
+.name-logo path:nth-child(1) {
+  stroke-dasharray: 369.1;
+  stroke-dashoffset: 369.1;
+  animation: line--draw 1s ease forwards;
+}
+// * H CHARACTER
+.name-logo path:nth-child(2) {
+  stroke-dashoffset: 424.1;
+  stroke-dasharray: 424.1;
+  animation: line--draw 2s ease forwards 0.4s;
+}
+// * A CHARACTER
+.name-logo path:nth-child(3) {
+  stroke-dashoffset: 389.4;
+  stroke-dasharray: 389.4;
+  animation: line--draw 2s ease forwards 0.8s;
+}
+// * U CHARACTER
+.name-logo path:nth-child(4) {
+  stroke-dashoffset: 395.3;
+  stroke-dasharray: 395.3;
+  animation: line--draw 2s ease forwards 1.2s;
+}
+// * R CHARACTER
+.name-logo path:nth-child(5) {
+  stroke-dashoffset: 452.6;
+  stroke-dasharray: 452.6;
+  animation: line--draw 2s ease forwards 1.6s;
+}
+// * Y CHARACTER
+.name-logo path:nth-child(6) {
+  stroke-dashoffset: 300.3;
+  stroke-dasharray: 300.3;
+  animation: line--draw 2s ease forwards 2s;
+}
+// * A CHARACTER
+.name-logo path:nth-child(7) {
+  stroke-dashoffset: 389.4;
+  stroke-dasharray: 389.4;
+  animation: line--draw 2s ease forwards 2.4s;
+}
+// * S CHARACTER
+.name-logo path:nth-child(8) {
+  stroke-dashoffset: 369.1;
+  stroke-dasharray: 369.1;
+  animation: line--draw 2s ease forwards 0.5s;
+}
+// * A CHARACTER
+.name-logo path:nth-child(9) {
+  stroke-dashoffset: 389.4;
+  stroke-dasharray: 389.4;
+  animation: line--draw 2s ease forwards 1s;
+}
+// * R CHARACTER
+.name-logo path:nth-child(10) {
+  stroke-dashoffset: 452.6;
+  stroke-dasharray: 452.6;
+  animation: line--draw 2s ease forwards 1.5s;
+}
+// * M CHARACTER
+.name-logo path:nth-child(11) {
+  stroke-dashoffset: 515.98;
+  stroke-dasharray: 515.98;
+  animation: line--draw 2s ease forwards 2s;
+}
+// * A CHARACTER
+.name-logo path:nth-child(12) {
+  stroke-dashoffset: 389.4;
+  stroke-dasharray: 389.4;
+  animation: line--draw 2s ease forwards 2.5s;
+}

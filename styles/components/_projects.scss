@@ -1,0 +1,80 @@
+.projects {
+  &__container {
+    margin: 5rem 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+  }
+  &__tile {
+    width: 310px;
+    height: 310px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__tile-info {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+  }
+
+  &__card {
+    width: inherit;
+    height: inherit;
+    transition: 0.7s ease;
+
+    &-tribute {
+      background-image: url("/img/tributePage.jpg");
+    }
+    &-documentation {
+      background-image: url("/img/technicalDoc.png");
+    }
+    &-landing {
+      background-image: url("/img/landingPage.jpg");
+    }
+    &-survey {
+      background-image: url("/img/surveyForm.jpg");
+    }
+  }
+
+  &__btn {
+    border: solid colors(col-primary-blue) 0.2rem;
+    background: none;
+    color: colors(col-light-black);
+    padding: 0.8rem;
+    font-family: fonts(font-heading);
+    font-size: 1.8rem;
+    font-weight: 500;
+    width: 20rem;
+    display: block;
+    margin: 3rem auto;
+    transition: 0.4s ease-in;
+    &:hover {
+      cursor: pointer;
+      box-shadow: inset 20rem 0 0 0 colors(col-dark-blue);
+      border-color: colors(col-dark-blue);
+      color: colors(col-white);
+    }
+  }
+}
+
+.projects__tile:hover img {
+  opacity: 0;
+}
+
+.projects__tile:hover .projects__tile-info {
+  opacity: 1;
+}
+
+.projects__tile:hover .heading-projects-lev {
+  animation: bounce 1.2s ease-in;
+}
+
+.projects__tile:hover .heading-projects-sub-lev {
+  animation: slideInRight 0.8s ease;
+}

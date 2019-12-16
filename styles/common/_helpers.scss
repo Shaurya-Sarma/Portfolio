@@ -1,0 +1,82 @@
+// Global Styling for Typography
+
+.h1 {
+  @include text(fonts(font-heading), colors(col-black), 3.6rem, 500);
+}
+
+.h2 {
+  @include text(fonts(font-heading), colors(col-black), 4rem, 700);
+}
+
+.h3 {
+  @include text(fonts(font-heading), colors(col-black), 2.6rem, 400);
+}
+
+.h4 {
+  @include text(fonts(font-heading), colors(col-light-black), 2.6rem, 550);
+}
+
+.h5 {
+  @include text(fonts(font-heading), colors(col-light-black), 2.4rem, 600);
+}
+
+.h6 {
+  @include text(fonts(font-heading), colors(col-primary-blue), 1.6rem, 400);
+}
+
+.p {
+  @include text(fonts(font-body), colors(col-dark-brown), 1.6rem, 400);
+  line-height: map-get($lh, desktop);
+  @include responsive(md) {
+    line-height: map-get($lh, tablet);
+  }
+  @include responsive(sm) {
+    line-height: map-get($lh, mobile);
+  }
+}
+
+.li {
+  @include text(fonts(font-alt), colors(col-white), 2rem, 400);
+}
+
+.theme--blue {
+  background: colors(col-dark-blue);
+}
+
+.theme--orange {
+  background: colors(col-orange);
+}
+
+.theme--yellow {
+  background: colors(col-yellow);
+}
+
+.theme--purple {
+  background: colors(col-purple);
+}
+
+// Padding Classes
+
+.u-padding-small-bottom {
+  padding-bottom: 3vh;
+}
+
+.u-padding-medium-bottom {
+  padding-bottom: 7.5vh;
+}
+
+.u-padding-large-bottom {
+  padding-bottom: 20vh;
+}
+
+.u-padding-small-top {
+  padding-top: 3vh;
+}
+
+.u-padding-medium-top {
+  padding-top: 7.5vh;
+}
+
+.u-padding-large-top {
+  padding-top: 20vh;
+}

@@ -1,0 +1,67 @@
+.footer {
+  background-color: colors(col-blue-gray);
+  margin-top: -1px; // FIX CLIP-PATH DIV WHITESPACE
+  position: relative;
+  &__redirect {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -30px;
+    margin: 0 auto;
+    color: colors(col-white);
+    width: 7rem;
+    height: 7rem;
+    font-size: 4.5rem;
+    background: colors(col-primary-blue);
+    text-align: center;
+    padding-top: 1.2rem;
+    transition: 0.5s ease;
+    &:hover {
+      cursor: pointer;
+      background: colors(col-dark-blue);
+      box-shadow: 0 0 0 5px rgba(colors(col-dark-blue), 0.2);
+    }
+  }
+  &__social-container {
+    padding: 8rem 0 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    display: flex;
+    margin: 0 4rem;
+    align-items: center;
+    justify-content: center;
+    color: colors(col-white);
+    font-size: 3.6rem;
+    background: colors(col-light-black);
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+    transition: 0.5s ease;
+    &:hover {
+      transform: scale(0.95);
+      background: colors(col-orange);
+      box-shadow: 0 0 0 5px rgba(colors(col-orange), 0.1);
+    }
+  }
+  &__credit {
+    text-align: center;
+    font-family: fonts(font-body);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: colors(col-white);
+    &-name {
+      color: colors(col-orange);
+    }
+  }
+}
+
+.footer__icon:hover .fab {
+  animation: goDown 0.5s ease;
+}
+
+.footer__redirect:hover .fa-angle-double-up {
+  animation: goDown 0.5s ease;
+}

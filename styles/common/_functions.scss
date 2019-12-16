@@ -1,0 +1,21 @@
+// Shortcut for map-get($colors, ...)
+
+@function colors($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+// Shortcut for map-get($fonts, ...)
+
+@function fonts($key) {
+  @if map-has-key($fonts, $key) {
+    @return map-get($fonts, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $fonts.";
+  @return null;
+}

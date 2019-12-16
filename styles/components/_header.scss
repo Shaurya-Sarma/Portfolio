@@ -1,0 +1,251 @@
+// * Home Section Styling
+.header {
+  &__container {
+    background-color: colors(col-navy-blue);
+    height: 100vh;
+  }
+  &__content {
+    text-align: center;
+    margin: 30vh 8vw;
+  }
+}
+
+.primary-btn {
+  border: colors(col-white) 0.2rem solid;
+  background: none;
+  color: colors(col-white);
+  outline: none;
+  width: 19.5rem;
+  padding: 1.2rem;
+  margin-top: 7rem;
+  transition: 0.4s ease-in;
+  .fa-chevron-right {
+    vertical-align: middle;
+    transition: 0.5s;
+  }
+  &:hover {
+    cursor: pointer;
+    box-shadow: inset 19.5rem 0 0 0 colors(col-dark-blue);
+    border-color: colors(col-dark-blue);
+    .fa-chevron-right {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+// * NAVIGATION BAR STYLING
+.nav__container {
+  background: colors(col-light-black);
+  z-index: 99;
+  height: 5rem;
+  border-bottom: 3px solid colors(col-orange);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  @include responsive(md) {
+    position: relative;
+  }
+}
+
+.links-wrapper {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-link {
+  padding: 0;
+  z-index: 20;
+  margin: 0 2.5rem;
+  text-decoration: none;
+  transition: 0.5s;
+  transform: translateX(2rem);
+  @include responsive(lg) {
+    margin: 0 1.8rem;
+  }
+  @include responsive(md) {
+    font-size: 3rem;
+    margin: 0 2.6rem;
+  }
+  &:hover {
+    color: colors(col-primary-blue);
+    cursor: pointer;
+  }
+  &:active {
+    color: colors(col-dark-blue);
+  }
+}
+
+.nav-icon {
+  display: none;
+  width: 2.8rem;
+  transform: translateX(2rem);
+  &:hover {
+    cursor: pointer;
+  }
+  @include responsive(md) {
+    display: block;
+  }
+}
+
+.lev-one,
+.lev-two,
+.lev-three {
+  background-color: colors(col-white);
+  display: block;
+  height: 0.4rem;
+  margin: 0.4rem 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-icon:hover .lev-one {
+  background-color: colors(col-primary-blue);
+}
+
+.nav-icon:hover .lev-two {
+  background-color: colors(col-light-blue);
+}
+
+.nav-icon:hover .lev-three {
+  background-color: colors(col-primary-blue);
+}
+
+.lev-one--close {
+  transform: translateY(0.8rem) rotate(135deg);
+}
+
+.lev-two--close {
+  transform: scale(0);
+}
+
+.lev-three--close {
+  transform: translateY(-0.8rem) rotate(-135deg);
+}
+
+.current {
+  color: colors(col-orange);
+}
+
+.fa-bars::before,
+.fa-bars::after,
+.fa-bars {
+  position: relative;
+  font-size: 3rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  animation: smoothSlide 0.5s ease;
+}
+
+.overlay {
+  max-width: 1200px;
+  width: 100%;
+  top: 5rem;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+  @include responsive(md) {
+    background: colors(col-light-black);
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 0;
+  }
+}
+
+.visible {
+  height: 220px;
+}
+
+// * ANIMATED BACKGROUND OBJECTS
+
+.header__content li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  top: -150px;
+}
+
+.header__content li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.header__content li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.header__content li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.header__content li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.header__content li:nth-child(5) {
+  left: 65%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 0s;
+}
+
+.header__content li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.header__content li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.header__content li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 40s;
+}
+
+.header__content li:nth-child(9) {
+  left: 20%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.header__content li:nth-child(10) {
+  left: 85%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 1s;
+  animation-duration: 11s;
+}

@@ -1,0 +1,40 @@
+// Colors
+
+$colors: (
+  col-black: #000,
+  col-light-black: #212121,
+  col-dark-gray: #333333,
+  col-blue-gray: #263238,
+  col-white: #fff,
+  col-dark-white: #f9f9f9,
+  col-light-gray: #e8e8e8,
+  col-gray: #c4c4c4,
+  col-dark-brown: #4f4e4c,
+  col-primary-blue: #2d9cdb,
+  col-dark-blue: #0288d1,
+  col-light-blue: #b3e5fc,
+  col-navy-blue: #151c27,
+  col-yellow: #d1ae02,
+  col-purple: #8f02d1,
+  col-orange: #d14702,
+  col-green: #2ecc71,
+  col-red: #ff5252
+);
+
+// Fonts
+$fonts: (
+  font-heading: #{"Raleway",
+  sans-serif},
+  font-body: #{"Open Sans",
+  Helvetica},
+  font-alt: #{"Abel",
+  sans-serif}
+);
+
+$lh: (
+  mobile: 2.75,
+  tablet: 2,
+  desktop: 1.75
+);
+
+$loading-duration: 500ms;
