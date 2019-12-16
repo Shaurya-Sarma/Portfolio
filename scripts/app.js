@@ -138,8 +138,25 @@ window.addEventListener("resize", () => {
     aboutIcons[1].setAttribute("data-aos-delay", iconDelayOne);
     aboutIcons[2].setAttribute("data-aos-delay", iconDelayTwo);
     aboutIcons[3].setAttribute("data-aos-delay", iconDelayThree);
+  } else {
+    aboutIcons[1].removeAttribute("data-aos-delay");
+    aboutIcons[2].removeAttribute("data-aos-delay");
+    aboutIcons[3].removeAttribute("data-aos-delay");
   }
 });
+
+window.addEventListener("load", () => {
+  if (window.innerWidth > 900) {
+    aboutIcons[1].setAttribute("data-aos-delay", iconDelayOne);
+    aboutIcons[2].setAttribute("data-aos-delay", iconDelayTwo);
+    aboutIcons[3].setAttribute("data-aos-delay", iconDelayThree);
+  } else {
+    aboutIcons[1].removeAttribute("data-aos-delay");
+    aboutIcons[2].removeAttribute("data-aos-delay");
+    aboutIcons[3].removeAttribute("data-aos-delay");
+  }
+});
+
 
 // --------------------------------------------------------------------------
 
@@ -153,6 +170,22 @@ window.addEventListener("resize", () => {
     aboutInfoBlocks[1].setAttribute("data-aos-delay", iconDelayOne);
     aboutInfoBlocks[2].setAttribute("data-aos-delay", iconDelayTwo);
     aboutInfoBlocks[3].setAttribute("data-aos-delay", iconDelayThree);
+  } else {
+    aboutInfoBlocks[1].removeAttribute("data-aos-delay");
+    aboutInfoBlocks[2].removeAttribute("data-aos-delay");
+    aboutInfoBlocks[3].removeAttribute("data-aos-delay");
+  }
+});
+
+window.addEventListener("load", () => {
+  if (window.innerWidth > 900) {
+    aboutInfoBlocks[1].setAttribute("data-aos-delay", iconDelayOne);
+    aboutInfoBlocks[2].setAttribute("data-aos-delay", iconDelayTwo);
+    aboutInfoBlocks[3].setAttribute("data-aos-delay", iconDelayThree);
+  } else {
+    aboutInfoBlocks[1].removeAttribute("data-aos-delay");
+    aboutInfoBlocks[2].removeAttribute("data-aos-delay");
+    aboutInfoBlocks[3].removeAttribute("data-aos-delay");
   }
 });
 
