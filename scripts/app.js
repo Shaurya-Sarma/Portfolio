@@ -79,7 +79,6 @@ function toggleMenu() {
 }
 
 window.addEventListener("resize", () => {
-  console.log(window.innerWidth);
   if (window.innerWidth > 900) {
     overlay.classList.remove("visible");
   }
@@ -149,9 +148,13 @@ aboutInfoBlocks.forEach(block => {
   block.setAttribute("data-aos", "fade-up");
 });
 
-aboutInfoBlocks[1].setAttribute("data-aos-delay", iconDelayOne);
-aboutInfoBlocks[2].setAttribute("data-aos-delay", iconDelayTwo);
-aboutInfoBlocks[3].setAttribute("data-aos-delay", iconDelayThree);
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 900) {
+    aboutInfoBlocks[1].setAttribute("data-aos-delay", iconDelayOne);
+    aboutInfoBlocks[2].setAttribute("data-aos-delay", iconDelayTwo);
+    aboutInfoBlocks[3].setAttribute("data-aos-delay", iconDelayThree);
+  }
+});
 
 // --------------------------------------------------------------------------
 
