@@ -226,3 +226,10 @@ const contactForm = document.querySelector(".contact-page__form");
 contactForm.setAttribute("data-aos", "zoom-in");
 contactForm.setAttribute("data-aos-offset", "200");
 contactForm.setAttribute("data-aos-duration", "800");
+
+// TOGGLE INFINITE ANIMATION - STATUS: ON
+
+const animated = document.querySelectorAll("[data-aos]");
+animated.forEach(element => {
+  element.setAttribute("data-aos-once", "true");
+});
