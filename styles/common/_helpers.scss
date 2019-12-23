@@ -29,6 +29,7 @@
   line-height: map-get($lh, desktop);
   @include responsive(md) {
     line-height: map-get($lh, tablet);
+    font-size: 1.8rem;
   }
   @include responsive(sm) {
     line-height: map-get($lh, mobile);
